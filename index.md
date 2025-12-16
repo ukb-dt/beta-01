@@ -126,11 +126,20 @@ My voice joins as the fifth: not to compete, but to compress further. The Oendad
 
 The unattainability of zero, visualized:
 
-<div style="display:flex; justify-content:center; gap:1%;">
-  <img src="llc/asymptote-01.jpg" style="width:32%; height:auto;">
-  <img src="llc/asymptote-02.jpg" style="width:32%; height:auto;">
-  <img src="llc/asymptote-03.jpg" style="width:32%; height:auto;">
+<div style="display:flex; justify-content:center; gap:1%; flex-wrap:wrap;">
+  <img src="llc/asymptote-01.jpg" style="width:32%; height:auto; max-width:100%;">
+  <img src="llc/asymptote-02.jpg" style="width:32%; height:auto; max-width:100%;">
+  <img src="llc/asymptote-03.jpg" style="width:32%; height:auto; max-width:100%;">
 </div>
+
+<!-- Optional: responsive stacking on small screens -->
+<style>
+@media (max-width: 768px) {
+  div[style*="flex-wrap"] img {
+    width: 100% !important;
+  }
+}
+</style>
 
 And the eternal loop that contains it:
 
